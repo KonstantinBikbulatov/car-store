@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="js/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="navbar">
+                <a href="#">
+                    <img src="img/Logo.svg" alt="">
+                </a>
+                <nav class="navbar__menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Explore</a></li>
+                        <li><a href="#">Showroom</a></li>
+                        <li><a href="#">Credit Simulation</a></li>
+                        <li><a href="#">Contact Us</a></li>
+
+                        <!-- <ul class="navbar__menu-list"> -->
+                        <li class="navbar__menu-list">
+                            <a href="#" class="navbar__menu-link">Page 
+                                    <img src="img/Vector.svg" alt="">
+                                </a>
+                            <ul class="navbar__sub-menu-list">
+                                <li>
+                                    <a href="#" class="navbar__sub-menu-link">Page 1</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navbar__sub-menu-link">Page 2</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navbar__sub-menu-link">Page 3</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navbar__sub-menu-link">Page 4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- </ul> -->
+                    </ul>
+
+                </nav>
+                <div class="navbar__additem">
+                    <div class="navbar__rectangle"></div>
+                    <button class="navbar__btn">Add Your Item</button>
+                </div>
+            </div>
+
+
+            <p class="company-name">Esemka Car</p>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="swiper-slider__container">
+                            <div class="swiper-slider__slide swiper-slider">
+                                <h2 class="swiper-slider__title">Model SV</h2>
+                                <div class="swiper-slider__list">
+                                    <ul>
+                                        <li>Mileage </li>
+                                        <li class="red">555</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Engine</li>
+                                        <li class="red">2000</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Fuel Economy</li>
+                                        <li class="red">8</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slider__container">
+                            <div class="swiper-slider__slide swiper-slider">
+                                <h2 class="swiper-slider__title">Model A</h2>
+                                <div class="swiper-slider__list">
+                                    <ul>
+                                        <li>Mileage </li>
+                                        <li class="red">555</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Engine</li>
+                                        <li class="red">2000</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Fuel Economy</li>
+                                        <li class="red">8</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slider__slide swiper-slider">
+                            <h2 class="swiper-slider__title">Model B</h2>
+                            <div class="swiper-slider__list">
+                                <ul>
+                                    <li>Mileage </li>
+                                    <li class="red">555</li>
+                                </ul>
+                                <ul>
+                                    <li>Engine</li>
+                                    <li class="red">2000</li>
+                                </ul>
+                                <ul>
+                                    <li>Fuel Economy</li>
+                                    <li class="red">8</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <button class="slider-btn">By Now</button>
+        </div>
+
+    </header>
+    <div class="select-car">
+        <select class="select-car__select" name="select-car__select" required="required">
+            <option value="">Select Brand</option>
+            <option value="1">Value 1</option>
+            <option value="2">Value 2</option>
+            <option value="3">Value 3</option>
+          </select>
+        <select class="select-car__select" name="select-car__select" required="required">
+            <option value="">Select Model</option>
+            <option value="1">Value 1</option>
+            <option value="2">Value 2</option>
+            <option value="3">Value 3</option>
+          </select>
+        <button class="button">search</button>
+    </div>
+    <div class="collection container">
+        <div class="collection-headline">
+            Our collection
+            <button id="collection__btn--left"></button>
+            <button id="collection__btn--right"></button>
+        </div>
+
+        <div class="collection__models">
+            <div class="collection__model-1">
+                <div class="collection__item">
+                    Esemka Car
+                    <div class="collection__name-model">Model SX</div>
+                    <ul class="collection__name-feature">
+                        <li>2000</li>
+                        <li>Electric</li>
+                        <li>Automatic</li>
+                    </ul>
+                    <img src="img/arrow-right-2.svg" class="collection__arrow-right">
+                </div>
+            </div>
+            <div class="collection__model2">Two</div>
+            <div class="collection__model3">Three</div>
+            <div class="collection__model4">Four</div>
+            <div class="collection__model5">Five</div>
+        </div>
+    </div>
+    <div class="experience container">
+        <div class="experience__foto">
+        </div>
+        <div class="experience__description">
+            <h2 class="headline experience__headline"> Over 10 Years Experiences We Sell Electric Cars </h2>
+            <div class="experience__text"> Develop a website by finding a product identity that has value and branding to become a characteristic of a company. </div>
+            <div class="experience__data">
+                <div>
+                    <span class="experience__value experience--red">1000+</span>
+                    <span class="experience__name experience--red">Cars Sold</span>
+                </div>
+                <div>
+                    <span class="experience__value">235</span>
+                    <span class="experience__name">Customers</span>
+                </div>
+                <div>
+                    <span class="experience__value">1100</span>
+                    <span class="experience__name">Dealer Reviews</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="why-choose-us large-container">
+        <div class="why-choose-us__content">
+            <div>
+                <h2 class="headline headline--white">Why Choose Us?</h2>
+                <p class="why-choose-us__item">We will help a client's problems to develop the products they have with high quality</p>
+                <ul>
+                    <li>
+                        <p>More than 10 Years Experiences</p>
+                        <p>Make the appearance of a mobile application that has quality and increases user convenience</p>
+                    </li>
+                    <li>
+                        <p>Trusted by Customers</p>
+                        <p>Help create a website and redesign it so that it becomes a website that is more trendy and looks fresh.</p>
+                    </li>
+                    <li>
+                        <p>Wide Range of Brand</p>
+                        <p>Create customizable illustrations with attractive designs that are made visually through high creativity</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="why-choose-us__img"><img src="./img/why-choose-us/why-choose-us.jpg"></div>
+        </div>
+    </div>
+    <div class="top-brands">
+        <div class="top-brands__container">
+            <p class="top-brands__headline">Our top brands</p>
+            <div class="top-brands__brands">
+                <img src="./img/top-brands/logo-1.svg">
+                <img src="./img/top-brands/logo-2.svg">
+                <img src="./img/top-brands/logo-3.svg">
+                <img src="./img/top-brands/logo-2.svg">
+                <img src="./img/top-brands/logo-1.svg">
+            </div>
+        </div>
+    </div>
+    <div class="new-items container">
+        <h2 class="headline">New Items</h2>
+        <div class="new-items__container">
+            <div class="new-items__card new-items__card-1">
+                <div class="new-items__elem1 ">NEW</div>
+                <div class="new-items__elem2 ">
+                    <h3>Model SV</h3>
+                    <p>Esemka Car</p>
+                    <p class="red ">$12000</p>
+                </div>
+            </div>
+            <div class="new-items__card new-items__card-2 ">
+                <div class="new-items__elem1 ">NEW</div>
+                <div class="new-items__elem2 ">
+                    <h3>Model SV</h3>
+                    <p>Esemka Car</p>
+                    <p class="red ">$12000</p>
+                </div>
+            </div>
+            <div class="new-items__card new-items__card-3 ">
+                <div class="new-items__elem1 ">NEW</div>
+                <div class="new-items__elem2 ">
+                    <h3>Model SV</h3>
+                    <p>Esemka Car</p>
+                    <p class="red ">$12000</p>
+                </div>
+            </div>
+            <div class="new-items__card new-items__card-4 ">
+                <div class="new-items__elem1 ">NEW</div>
+                <div class="new-items__elem2 ">
+                    <h3>Model SV</h3>
+                    <p>Esemka Car</p>
+                    <p class="red ">$12000</p>
+                </div>
+            </div>
+            <div class="new-items__card new-items__card-5 ">
+                <div class="new-items__elem1 ">NEW</div>
+                <div class="new-items__elem2 ">
+                    <h3>Model SV</h3>
+                    <p>Esemka Car</p>
+                    <p class="red ">$12000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="what-are-people container">
+        <h2 class="headline what-are-people__headline">What Are People <br>Saying About Us</h2>
+        <p class="what-are-people__text">Enter your select domain name and choose any extension name in the next step
+            <br> (choose between .com, .online, .tech, .site, .net, and more)
+        </p>
+        <div class="what-are-people__block">
+            <img src="./img/what-are-people/what-are-people.png" class="about__img">
+            <div class="what-are-people__description">
+                <p class="what-are-people__headline-item">AutoWeb helps me to find the best car</p>
+                <p class="what-are-people__text">I am very happy with the services provided, it is very helpful, starting from the insight that the company gave from the start that I did not understand what it was so I got knowledge and made my website look better.</p>
+                <p class="what-are-people__item-1">Clay Johnson</p>
+                <p class="what-are-people__item-2">Director at Wax Inc</p>
+            </div>
+        </div>
+    </div>
+    <div class="download">
+        <div class="download__content">
+            <div class="download__img-phone">
+                <img src="img/download/iPhone.svg " alt=" ">
+            </div>
+            <div class="download__text ">
+                <p class="headline download__Headline">Download Our App</p>
+                <p class="download__text-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <ul class="download__list ">
+                    <li>
+                        Best Deals
+                    </li>
+                    <li>
+                        Sell Your Car
+                    </li>
+                    <li>
+                        Showroom Events
+                    </li>
+                    <li>
+                        Car Dealer
+                    </li>
+                    <li>
+                        Compare Prices
+                    </li>
+                </ul>
+                <div class="download__link ">
+                    <div class="download__link-appstore ">
+                        <a href="# ">
+                            <img src="./img/download/appstore.svg" alt=" ">
+                        </a>
+                    </div>
+                    <div class="download__link-google ">
+                        <a href="# ">
+                            <img src="./img/download/google.svg " alt=" ">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="subscribe ">
+        <p class="headline subscribe__headline ">Subscribe Our News Letter</p>
+        <p class="subscribe__text ">You can read our news letter and get free knowledge</p>
+        <form class="subscribe__form " action=" ">
+            <div>
+                <p class="subscribe__input-name "><label for="GET-name ">Your Name:</label></p>
+                <input class="subscribe__input " placeholder="Input your name " id="GET-name " type="text " name="name ">
+            </div>
+            <div>
+                <p class="subscribe__input-name "><label for="GET-name ">Your Email</label></p>
+                <input class="subscribe__input " placeholder="Input your email " id="GET-name " type="text " name="name ">
+            </div>
+            <button class="button ">submit</button>
+        </form>
+    </div>
+
+    <footer class="footer ">
+        <div class="footer__wrapper ">
+            <div class="footer-container ">
+                <div class="footer-container__elem1 ">
+                    <div class="footer-container__logo ">
+                        <img src="./img/footer/logo-footer.svg " alt=" ">
+                    </div>
+                    <p class="footer-container__elem1-text ">OurStudio is a digital agency UI / UX Design and Website Development located in Ohio, United States of America</p>
+                </div>
+                <div class="footer-container__elem2 ">
+                    <ul>
+                        <p>Company</p>
+                        <li><a href="# ">Home</a></li>
+                        <li><a href="# ">Showroom</a></li>
+                        <li><a href="# ">FAQ</a></li>
+                        <li><a href="# ">Blog</a></li>
+                        <li><a href="# ">Contact Us</a></li>
+                    </ul>
+                    <ul>
+                        <p>Social</p>
+                        <li><a href="# ">Facebook</a></li>
+                        <li><a href="# ">Instagram</a></li>
+                        <li><a href="# ">Youtube</a></li>
+                        <li><a href="# ">Twitter</a></li>
+                        <li><a href="# ">Linkedln</a></li>
+                    </ul>
+                </div>
+                <div class="footer-container__elem3 ">
+                    <div class="footer-container__elem3-contacts ">
+                        <img src="./img/footer/gps.svg " alt=" ">
+                        <p>221 B Santa Monica, Los Angeles</p>
+                    </div>
+                    <div class="footer-container__elem3-contacts ">
+                        <img src="./img/footer/tel.svg " alt=" ">
+                        <p>(+1) 923 2341 22</p>
+                    </div>
+                    <div class="footer-container__elem3-contacts ">
+                        <img src="./img/footer/mail.svg " alt=" ">
+                        <p>contact@tanahairstudio.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copy ">Copyright Tanah Air Studio</div>
+    </footer>
+    <script src="js/swiper/swiper-bundle.min.js "></script>
+    <script src="js/script.js "></script>
+</body>
+
+</html>

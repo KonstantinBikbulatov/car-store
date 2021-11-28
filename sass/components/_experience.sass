@@ -1,0 +1,55 @@
+.experience
+    margin-top: $marginTopMediaLarge
+    display: grid
+    grid-template-columns: 1fr 1fr
+    height: 544px
+    grid-column-gap: 56px
+
+
+    &__headline
+        margin-top: 63px
+
+    &__text
+        margin-top: 32px
+
+    &__foto
+        background-color: #2a9fbc
+
+    &__data
+        margin-top: 64px
+        display: grid
+        grid-template-columns: auto  auto  auto
+        grid-column-gap: 88px
+
+    &__value
+        display: inline-block
+        margin-top: 32px
+        font:
+            family: Mulish-Bold
+            weight: bold
+            size: 48px
+
+    &--red
+        color: #FA3C45
+ 
+    &__name
+        display: inline-block
+        margin-top: 16px
+
+@media (max-width: 1300px)
+    .experience
+        margin-top: $marginTopMediaMiddle
+        grid-template-columns: 400px 400px
+        height: 400px
+        gap: 16px
+
+        &__value
+            font-size: 40px
+
+        &__headline
+            margin-top: 30px
+            font-size: 36px
+
+        &__data
+            margin-top: 10px
+            grid-column-gap: 20px

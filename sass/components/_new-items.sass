@@ -1,0 +1,69 @@
+.new-items
+    margin-top: 200px
+
+    &__container
+        display: grid
+        grid-template-columns: 2fr 1fr 1fr
+        grid-template-rows: 406px 406px
+        gap: 16px
+
+    &__card
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        padding: 21px 23px
+        background: gray
+        border-radius: 6px
+
+    &__card-1
+        grid-row-start: 1
+        grid-row-end: 3
+        grid-column-start: 1
+        grid-column-end: 1
+
+    &__elem1
+        color: #FA3C45
+        background: white
+        border-radius: 6px
+        padding: 3px 6px 2px 7px
+        width: 48px
+        height: 25px
+        font-weight: 600
+        font-size: 14px
+        line-height: 130%
+        text-align: center
+
+    &__elem2
+        display: flex
+        flex-direction: column
+        color: white
+        text-align: center
+        justify-content: space-between
+        height: 93px
+
+.new-items h3
+    font-weight: bold
+    font-size: 24px
+    line-height: 120%
+    letter-spacing: 0.005em
+
+.new-items h2
+    font-weight: bold
+    font-size: 48px
+    line-height: 120%
+    letter-spacing: 0.005em
+    margin: 0px 0px 55px 0px
+
+.new-items .red
+    font-weight: bold
+    font-size: 24px
+    line-height: 120%
+    letter-spacing: 0.005em
+    color: #FA3C45
+
+@media (max-width: 1300px)
+    .new-items__card-3, .new-items__card-5
+        display: none
+
+    .new-items__container
+        grid-template-columns: 2fr 1fr

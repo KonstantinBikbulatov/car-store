@@ -1,0 +1,47 @@
+.what-are-people
+    margin-top: 200px
+    text-align: center
+    max-width: 1230px
+
+    &__text
+        margin-top: 32px
+
+    &__block
+        margin-top: 56px
+        display: grid
+        grid-template-columns: 520px 1fr
+        background-color: $mainColor
+
+    &__description
+        padding: 88px 83px 91px
+
+    &__headline-item
+        font-size: 31px
+        font-family: "Mulish-Bold"
+        color: $titleColor
+        text-align: center
+
+    &__item-1
+        margin-top: 40px
+        color: $redLight
+
+    &__item-2
+        margin-top: 8px
+ 
+.about__img
+    width: 100%
+
+.famous__review
+    display: flex
+    margin-top: 56px
+
+@media (max-width: 1300px)
+    .what-are-people__block
+        grid-template-columns: 400px 400px
+    
+    .what-are-people__headlines
+        font-size: 36px
+
+    .what-are-people__description
+        margin-top: 41px
+        padding: 16px
