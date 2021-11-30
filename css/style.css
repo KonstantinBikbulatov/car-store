@@ -700,7 +700,6 @@ a {
   gap: 120px;
   max-width: 1230px;
   margin: 0 auto;
-  justify-content: center;
 }
 .download__Headline {
   margin-top: 147px;
@@ -708,9 +707,6 @@ a {
 }
 .download__text {
   width: 530px;
-}
-.download__text-item {
-  margin-top: 22px;
 }
 .download__img-phone {
   position: relative;
