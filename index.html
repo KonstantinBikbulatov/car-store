@@ -15,7 +15,7 @@
         <div class="header__wrapper">
             <div class="navbar">
                 <a href="#">
-                    <img src="img/Logo.svg" alt="">
+                    <img src="./img/Logo.svg" alt="">
                 </a>
                 <nav class="navbar__menu">
                     <ul>
@@ -135,29 +135,31 @@
           </select>
         <button class="button">search</button>
     </div>
-    <div class="collection container">
-        <div class="collection-headline">
-            Our collection
-            <button id="collection__btn--left"></button>
-            <button id="collection__btn--right"></button>
+    <div class="container">
+        <div class="collection__headline">
+            <p>Our collection</p>
+            <button class="collection__btn--left"></button>
+            <button class="collection__btn--right"></button>
         </div>
-        <div class="collection__models">
-            <div class="collection__model-1">
-                <div class="collection__item">
-                    Esemka Car
-                    <div class="collection__name-model">Model SX</div>
-                    <ul class="collection__name-feature">
-                        <li>2000</li>
-                        <li>Electric</li>
-                        <li>Automatic</li>
-                    </ul>
-                    <img src="img/arrow-right-2.svg" class="collection__arrow-right">
+        <div class="collection">
+            <div class="collection__models">
+                <div class="collection__model-1 collection__model">
+                    <div class="collection__item">
+                        Esemka Car
+                        <div class="collection__name-model">Model SX</div>
+                        <ul class="collection__name-feature">
+                            <li>2000</li>
+                            <li>Electric</li>
+                            <li>Automatic</li>
+                        </ul>
+                        <img src="./img/collection/arrow-right.svg" class="collection__arrow-right">
+                    </div>
                 </div>
+                <div class="collection__model-2"></div>
+                <div class="collection__model-3"></div>
+                <div class="collection__model-4"></div>
+                <div class="collection__model-5"></div>
             </div>
-            <div class="collection__model2">Two</div>
-            <div class="collection__model3">Three</div>
-            <div class="collection__model4">Four</div>
-            <div class="collection__model5">Five</div>
         </div>
     </div>
     <div class="experience container">
@@ -334,13 +336,16 @@
             <button class="button ">submit</button>
         </form>
     </div>
-
+    <div class="modal hidden">
+        <div class="modal__content">
+        </div>
+    </div>
     <footer class="footer ">
         <div class="footer__wrapper ">
             <div class="footer-container ">
                 <div class="footer-container__elem1 ">
-                    <div class="footer-container__logo ">
-                        <img src="./img/footer/logo-footer.svg " alt=" ">
+                    <div class="footer-container__logo">
+                        <img src="./img/logo.svg " alt=" ">
                     </div>
                     <p class="footer-container__elem1-text ">OurStudio is a digital agency UI / UX Design and Website Development located in Ohio, United States of America</p>
                 </div>
@@ -381,5 +386,9 @@
     </footer>
     <script src="js/swiper/swiper-bundle.min.js "></script>
     <script src="js/script.js "></script>
+    <script type="text/javascript" src="js/collection/data.json"></script>
+    <script src="js/collection/slider.js "></script>
+    <script src="js/modal.js "></script>
 </body>
+
 </html>
