@@ -404,25 +404,19 @@ a {
 .collection__model-1 {
   padding-left: 40px;
   grid-area: 1/1/2/3;
-  background-repeat: no-repeat;
   background-size: 100%;
 }
 .collection__model-2 {
   grid-area: 1/3/2/4;
-  background-color: #9bc850;
-  background-repeat: no-repeat;
 }
 .collection__model-3 {
   grid-area: 2/1/3/2;
-  background-color: #a62e5c;
 }
 .collection__model-4 {
   grid-area: 2/2/3/3;
-  background-color: #2a9fbc;
 }
 .collection__model-5 {
   grid-area: 2/3/3/4;
-  background-color: #4e342e;
 }
 @media (max-width: 1300px) {
   .collection__model-5, .collection__model-2 {
