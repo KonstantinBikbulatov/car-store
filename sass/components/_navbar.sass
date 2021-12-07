@@ -1,6 +1,5 @@
-.navbar__menu>ul
-    display: flex
-    flex-direction: row
+.navbar__menu ul li
+    display: inline
 
 .navbar__menu ul
     list-style-type: none
@@ -20,35 +19,16 @@
 .navbar__menu-list>li
     margin: 0 10px 0 0
 
-    &:hover .navbar__sub-menu-list
-        display: block
+.navbar__menu-list:hover .navbar__sub-menu-list
+    display: block
 
 .navbar__sub-menu-list
     display: none
     position: absolute
     left: 0
     top: 20px
+    width: 100px
 
-.navbar__additem
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    align-items: center
-    width: 230px
-    height: 100%
-
-.navbar__rectangle
-    width: 40px
-    height: 40px
-    background: #FDE5E6
-    border-radius: 50%
-
-.navbar__btn
-    background: #FA3C45
-    width: 158px
-    height: 48px
-    border: none
-    border-radius: 8px
-
-    &:hover
-        border: 1px solid black
+@media (max-width: 1300px)
+    .navbar__menu li
+        padding-right: 20px

@@ -4,10 +4,11 @@
     height: 720px
     margin-top: 200px
 
+
     &__content
         display: grid
         grid-template-columns: 1fr 1fr
-        height: 720px
+        height: 100%
         gap: 120px
         max-width: 1230px
         margin: 0 auto
@@ -21,17 +22,18 @@
 
     &__img-phone
         position: relative
+        height: 100%
+
 
     &__img-phone img
-        width: 436px
         position: absolute
         bottom: 0
         right: 0
+        width: 80%
 
     .download__list
         margin-top: 58px
         color: $titleColor
-        height: 184px
         list-style-type: none
         font-weight: bold
         line-height: 120%
@@ -59,7 +61,19 @@
 @media (max-width: 1300px)
     .download
         margin-top: 100px
+        height: 500px
 
-        &__content
+        &__text-item
+            width:360px
+
+        &__content        
+            max-width: 816px
             grid-template-columns: 400px 400px
-            gap: 80px
+            gap: 16px
+
+        &__Headline
+            margin-top: 0px
+            font-size: 40px
+
+        &__img-phone
+            height: 500px

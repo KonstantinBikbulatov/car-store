@@ -10,6 +10,10 @@
   font-style: normal;
   font-weight: normal;
 }
+.logo {
+  width: 136px;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -22,13 +26,45 @@ a {
   color: white;
 }
 
-.navbar {
+.header__block {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  margin-top: 51px;
-  margin-bottom: 110px;
+  position: relative;
+  margin-top: 36px;
+  height: 56px;
+}
+
+.header__rectangle {
+  width: 40px;
+  height: 40px;
+  background: #FDE5E6;
+  border-radius: 50%;
+}
+
+.header__btn {
+  background: #FA3C45;
+  width: 158px;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  margin-left: 32px;
+}
+
+.header__navbar {
+  margin-left: 87px;
+  height: auto;
+}
+
+.header__block-user {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 0;
+}
+
+.header .container {
+  margin: 0 auto;
 }
 
 .header__wrapper {
@@ -43,9 +79,10 @@ a {
   margin-top: 96px;
 }
 
-.company-name {
+.header__company-name {
   font-size: 24px;
   margin-bottom: 16px;
+  margin-top: 96px;
 }
 
 .slider-btn {
@@ -84,9 +121,6 @@ a {
   justify-content: space-between;
   width: 190px;
   height: 165px;
-}
-.slider-btn-container__logo {
-  width: 136px;
 }
 .slider-btn-container__elem2 {
   display: flex;
@@ -129,9 +163,17 @@ a {
   letter-spacing: 0.005em;
 }
 
-.navbar__menu > ul {
-  display: flex;
-  flex-direction: row;
+@media (max-width: 1300px) {
+  .header__block-user {
+    display: none;
+  }
+
+  .header__navbar {
+    margin-left: 40px;
+  }
+}
+.navbar__menu ul li {
+  display: inline;
 }
 
 .navbar__menu ul {
@@ -156,7 +198,8 @@ a {
 .navbar__menu-list > li {
   margin: 0 10px 0 0;
 }
-.navbar__menu-list > li:hover .navbar__sub-menu-list {
+
+.navbar__menu-list:hover .navbar__sub-menu-list {
   display: block;
 }
 
@@ -165,35 +208,14 @@ a {
   position: absolute;
   left: 0;
   top: 20px;
+  width: 100px;
 }
 
-.navbar__additem {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 230px;
-  height: 100%;
+@media (max-width: 1300px) {
+  .navbar__menu li {
+    padding-right: 20px;
+  }
 }
-
-.navbar__rectangle {
-  width: 40px;
-  height: 40px;
-  background: #FDE5E6;
-  border-radius: 50%;
-}
-
-.navbar__btn {
-  background: #FA3C45;
-  width: 158px;
-  height: 48px;
-  border: none;
-  border-radius: 8px;
-}
-.navbar__btn:hover {
-  border: 1px solid black;
-}
-
 .swiper {
   width: 100%;
   height: 187px;
@@ -423,7 +445,7 @@ a {
     display: none;
   }
   .collection__models {
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -467,8 +489,8 @@ a {
 @media (max-width: 1300px) {
   .experience {
     margin-top: 100px;
-    grid-template-columns: 400px 400px;
-    height: 400px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70%;
     gap: 16px;
   }
   .experience__value {
@@ -684,7 +706,7 @@ a {
 
 @media (max-width: 1300px) {
   .what-are-people__block {
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 1fr 1fr;
   }
 
   .what-are-people__headlines {
@@ -692,7 +714,7 @@ a {
   }
 
   .what-are-people__description {
-    margin-top: 41px;
+    margin-top: 0px;
     padding: 16px;
   }
 }
@@ -705,7 +727,7 @@ a {
 .download__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 720px;
+  height: 100%;
   gap: 120px;
   max-width: 1230px;
   margin: 0 auto;
@@ -719,17 +741,17 @@ a {
 }
 .download__img-phone {
   position: relative;
+  height: 100%;
 }
 .download__img-phone img {
-  width: 436px;
   position: absolute;
   bottom: 0;
   right: 0;
+  width: 80%;
 }
 .download .download__list {
   margin-top: 58px;
   color: #11142D;
-  height: 184px;
   list-style-type: none;
   font-weight: bold;
   line-height: 120%;
@@ -758,10 +780,22 @@ a {
 @media (max-width: 1300px) {
   .download {
     margin-top: 100px;
+    height: 500px;
+  }
+  .download__text-item {
+    width: 360px;
   }
   .download__content {
+    max-width: 816px;
     grid-template-columns: 400px 400px;
-    gap: 80px;
+    gap: 16px;
+  }
+  .download__Headline {
+    margin-top: 0px;
+    font-size: 40px;
+  }
+  .download__img-phone {
+    height: 500px;
   }
 }
 .subscribe {
@@ -858,6 +892,11 @@ a {
 .footer-container__elem3-contacts p {
   margin-left: 10px;
 }
+@media (max-width: 1300px) {
+  .footer .footer__wrapper {
+    max-width: 856px;
+  }
+}
 
 .modal {
   position: fixed;
@@ -909,7 +948,9 @@ body {
 @media (max-width: 1300px) {
   .container {
     margin-top: 100px;
-    max-width: 816px;
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 856px;
   }
 }
 
