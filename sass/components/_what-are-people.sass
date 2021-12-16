@@ -7,6 +7,7 @@
         margin-top: 32px
 
     &__block
+        align-items: center
         margin-top: 56px
         display: grid
         grid-template-columns: 520px 1fr
@@ -45,3 +46,10 @@
     .what-are-people__description
         margin-top: 0px
         padding: 16px
+
+@media (max-width: 768px)
+    .what-are-people__block
+        grid-template-columns: 1fr
+
+    .about__img
+        display: none

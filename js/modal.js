@@ -1,12 +1,13 @@
 let hidden = document.querySelector(".hidden");
 let modal = document.querySelector(".modal");
 let modalContent = document.querySelector(".modal__content");
-let collection = document.querySelector(".collection");
 
-collection.onclick = function(e) {
+
+window.onclick = function(e) {
     console.log(e.target.className)
-    if (e.target.className.includes("collection__model") && e.target.className != "collection__models") {
-        modalContent.style.backgroundImage = e.target.style.backgroundImage;
+    if (e.target.className.includes("modal__item") && screen.width > 800) {
+        modalContent.style.backgroundImage = 'url(' + e.target.getAttribute('src') + ')';
+        console.log(screen.width);
         hidden.classList.toggle("hidden");
     }
 };

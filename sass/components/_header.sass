@@ -3,10 +3,13 @@ a
     color: white
 
 .header
-    background-image: linear-gradient(89.96deg, #000000 0.04%, rgba(255, 255, 255, 0) 99.97%)
     height: 681px
     width: 100%
     color: white
+    background-position: center
+    background-size: 150%
+    transition: 0.7s
+    opacity: 1
 
 .header__block
     display: flex
@@ -22,14 +25,6 @@ a
     background: #FDE5E6
     border-radius: 50%
 
-.header__btn
-    background: #FA3C45
-    width: 158px
-    height: 48px
-    border: none
-    border-radius: 8px
-    margin-left: 32px
-
 .header__navbar
     margin-left: 87px
     height: auto
@@ -37,6 +32,7 @@ a
 .header__block-user
     display: flex
     flex-direction: row
+    align-items: center
     position: absolute
     right: 0
 
@@ -58,14 +54,20 @@ a
     margin-bottom: 16px
     margin-top: 96px
 
-.slider-btn
-    margin-top: 96px
-    background: #FA3C45
-    color: #FFF
-    width: 128px
-    height: 56px
-    border: none
+.header__btn-login
+    height: 48px
+    width: 158px
+    border: 0
     border-radius: 8px
+    margin-left: 42px
+    background-color: #FA3C45
+
+.header__btn-login:hover
+    border: 2px solid #000000
+
+.header__btn
+    margin-top: 96px
+    color: #FFF
     font-weight: bold
     font-size: 16px
 
@@ -135,9 +137,27 @@ a
     letter-spacing: 0.005em
 
 @media (max-width: 1300px)
+    .header__company-name
+        margin-top: 60px
+
+    .header__btn
+        margin-top: 60px
+
     .header__block-user
         display: none
 
+    .header
+        height: 560px
+
     .header__navbar
         margin-left: 40px
-    
+
+@media (max-width: 768px)
+    .header__company-name
+        margin-top: 30px
+
+    .header__btn
+        margin-top: 30px
+
+    .header
+        height: 500px

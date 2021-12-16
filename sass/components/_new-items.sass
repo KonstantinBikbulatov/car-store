@@ -15,11 +15,28 @@
         background: gray
         border-radius: 6px
 
+    .new-items__container > div
+        background-position: center
+        background-size: 130%
+
     &__card-1
         grid-row-start: 1
         grid-row-end: 3
         grid-column-start: 1
         grid-column-end: 1
+        background-image: url(../img/detail/models.jpg)
+    
+    &__card-2
+        background-image: url(../img/detail/modelx1.jpg)
+    
+    &__card-3
+        background-image: url(../img/detail/model3.jpg)
+    
+    &__card-4
+        background-image: url(../img/detail/cyber1.jpg)
+
+    &__card-5
+        background-image: url(../img/detail/modelh.jpeg)
 
     &__elem1
         color: #FA3C45
@@ -67,3 +84,14 @@
 
     .new-items__container
         grid-template-columns: 2fr 1fr
+
+@media (max-width: 768px)
+    .new-items__container
+        grid-template-columns: 1fr
+        grid-template-row: 300px 300px
+
+    .new-items__card-2
+        display: none
+
+    .new-items__card-1
+        grid-area: auto

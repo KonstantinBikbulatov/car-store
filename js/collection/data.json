@@ -1,1 +1,1 @@
-data = '[{"collection":"model-1"}, {"collection":"model-2"}, {"collection":"model-3"}]'
+data = '[{"collection":"model-s", "name":"Model S", "price":"$100,000"}, {"collection":"model-y", "name":"Model Y", "price":"$60,000"}, {"collection":"model-3", "name":"Model 3",  "price":"$52,000"}]'

@@ -18,9 +18,26 @@
         text-align: left
 
     &__input
-        width: 296px
+        width: 100%
         height: 56px
         padding-left: 16px
+
+    .subscribe__form-item
+        width: 296px
     
     &__input-name
         color: $titleColor
+
+@media (max-width: 768px)
+    .subscribe__headline
+        margin-top: 50px
+
+    .subscribe__form
+        grid-row-gap: 16px
+        grid-template-columns: 1fr
+        grid-template-row: 1fr 1fr 1fr
+        margin-top: 35px
+
+    .subscribe__form *
+        margin: 0 auto
+

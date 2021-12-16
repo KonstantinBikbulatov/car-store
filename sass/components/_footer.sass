@@ -5,24 +5,23 @@
     height: 407px
     color: white
 
-
     &__wrapper
-        width: 1230px
+        max-width: 1330px
         margin: 0 auto
         min-width: 0
         padding-top: 95px
-
+        padding-left: 50px
+        padding-right: 50px
 
     &-container
-        display: flex
-        flex-direction: row
+        display: grid
+        grid-template-columns: auto auto auto
         justify-content: space-between
         margin-bottom: 46px
         font-weight: 600
         font-size: 14px
         line-height: 130%
         letter-spacing: 0.005em
-
 
     &-container__elem1
         display: flex
@@ -31,10 +30,8 @@
         width: 190px
         height: 165px
 
-
     &-container__logo
         width: 136px
-
 
     &-container__elem2
         display: flex
@@ -44,20 +41,22 @@
         width: 290px
         height: 210px
 
-
     &-container__elem2 ul
         list-style-type: none
-        line-height: 35px
         font-style: normal
         font-weight: 600
         font-size: 14px
         letter-spacing: 0.008em
 
+    &-container__elem2 ul li
+        margin-top: 20px
+
+    &-container__elem2 ul li:first-child
+        margin-top: 29px
 
     &-container__elem2 p
         margin-bottom: 12px
         letter-spacing: 0.005em
-
 
     &-container__elem3
         display: flex
@@ -65,15 +64,40 @@
         justify-content: space-between
         height: 105px
 
-
     &-container__elem3-contacts
         display: flex
         flex-direction: row
 
-
     &-container__elem3-contacts p
         margin-left: 10px
 
-    @media (max-width: 1300px)
-        .footer__wrapper
-            max-width: 856px
+@media (max-width: 1300px)
+    .footer__wrapper
+        max-width: 856px
+
+    .footer-container__elem2
+        justify-content: space-around
+
+@media (max-width: 768px)
+
+    .footer__wrapper
+        padding-top: 50px
+
+    .footer
+        height: auto
+
+    .footer-container__elem1-text
+        margin-left: 30px
+
+    .footer-container__elem1
+        grid-area: 1 / 1 / 2 / 3
+        flex-direction: row
+        width: 100%
+
+    .footer-container
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 80px 1fr
+        justify-content: center
+
+    .footer-container__elem2
+        

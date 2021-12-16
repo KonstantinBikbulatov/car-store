@@ -14,7 +14,9 @@
     <header class="header">
         <div class="container">
             <div class="header__block">
-                <img class="logo" src="./img/Logo.svg" alt="">
+                <a href="index.html">
+                    <img class="logo" src="./img/Logo.svg" alt="">
+                </a>
                 <div class="navbar header__navbar">
                     <nav class="navbar__menu">
                         <ul>
@@ -42,10 +44,41 @@
                             </li>
                         </ul>
                     </nav>
+                    <nav class="navbar__burger-menu">
+                        <input id="navbar__menu-toggle" type="checkbox" />
+                        <label class="navbar__menu-btn" for="navbar__menu-toggle">
+                          <span></span>
+                        </label>
+
+                        <ul class="navbar__menubox">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Explore</a></li>
+                            <li><a href="#">Showroom</a></li>
+                            <li><a href="#">Credit Simulation</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li class="navbar__burger-list">
+                                Pages
+                                <ul class="navbar__burger-list-items">
+                                    <li>
+                                        <a href="#">Page 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Page 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Page 3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Page 4</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
                 <div class="header__block-user">
                     <div class="header__rectangle"></div>
-                    <button class="header__btn">Add Your Item</button>
+                    <button class="header__btn-login">Add Your Item</button>
                 </div>
             </div>
             <p class="header__company-name">Esemka Car</p>
@@ -54,7 +87,7 @@
                     <div class="swiper-slide">
                         <div class="swiper-slider__container">
                             <div class="swiper-slider__slide swiper-slider">
-                                <h2 class="swiper-slider__title">Model SV</h2>
+                                <h2 class="swiper-slider__title">Model S</h2>
                                 <div class="swiper-slider__list">
                                     <ul>
                                         <li>Mileage </li>
@@ -75,7 +108,7 @@
                     <div class="swiper-slide">
                         <div class="swiper-slider__container">
                             <div class="swiper-slider__slide swiper-slider">
-                                <h2 class="swiper-slider__title">Model A</h2>
+                                <h2 class="swiper-slider__title">Model Y</h2>
                                 <div class="swiper-slider__list">
                                     <ul>
                                         <li>Mileage </li>
@@ -95,7 +128,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slider__slide swiper-slider">
-                            <h2 class="swiper-slider__title">Model B</h2>
+                            <h2 class="swiper-slider__title">Model 3</h2>
                             <div class="swiper-slider__list">
                                 <ul>
                                     <li>Mileage </li>
@@ -115,7 +148,9 @@
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
-            <button class="slider-btn">By Now</button>
+            <form action="detail.html" method="GET">
+                <button type="submit" class="button header__btn">By Now</button>
+            </form>
         </div>
     </header>
     <div class="select-car">
@@ -136,33 +171,76 @@
     <div class="container">
         <div class="collection__headline">
             <p>Our collection</p>
-            <button class="collection__btn--left"></button>
-            <button class="collection__btn--right"></button>
+            <button class="swiper-button-prev"></button>
+            <button class="swiper-button-next"></button>
         </div>
         <div class="collection">
-            <div class="collection__models">
-                <div class="collection__model-1 collection__model">
-                    <div class="collection__item">
-                        Esemka Car
-                        <div class="collection__name-model">Model SX</div>
-                        <ul class="collection__name-feature">
-                            <li>2000</li>
-                            <li>Electric</li>
-                            <li>Automatic</li>
-                        </ul>
-                        <img src="./img/collection/arrow-right.svg" class="collection__arrow-right">
+            <div class="mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide collection__models">
+                        <div class="collection__model collection__model-1">
+                            <img src="./img/collection/model-s/0.jpg" class="collection__img-1 collection__img--back modal__item">
+                            <div class="collection__item">
+                                Esemka Car
+                                <div class="collection__name-model">Model SX</div>
+                                <ul class="collection__name-feature">
+                                    <li>2000</li>
+                                    <li>Electric</li>
+                                    <li>Automatic</li>
+                                </ul>
+                                <img src="./img/collection/arrow-right.svg" class="collection__arrow-right">
+                            </div>
+                        </div>
+                        <div class="collection__model-2"><img src="./img/collection/model-s/1.jpg" class="collection__img modal__item"></div>
+                        <div class="collection__model-3"><img src="./img/collection/model-s/2.jpg" class="collection__img modal__item"></div>
+                        <div class="collection__model-4"><img src="./img/collection/model-s/3.jpg" class="collection__img modal__item"></div>
+                        <div class="collection__model-5"><img src="./img/collection/model-s/4.jpg" class="collection__img modal__item"></div>
+                    </div>
+                    <div class="swiper-slide collection__models">
+                        <div class="collection__model-1 collection__model">
+                            <img src="./img/collection/model-y/0.jpg" class="collection__img-1 collection__img--back modal__item">
+                            <div class="collection__item">
+                                Esemka Car
+                                <div class="collection__name-model">Model SX</div>
+                                <ul class="collection__name-feature">
+                                    <li>2000</li>
+                                    <li>Electric</li>
+                                    <li>Automatic</li>
+                                </ul>
+                                <img src="./img/collection/arrow-right.svg" class="collection__arrow-right">
+                            </div>
+                        </div>
+                        <div class="collection__model-2"><img src="./img/collection/model-y/1.jpg" class="collection__img modal__item"></div>
+                        <div class="collection__model-3"><img src="./img/collection/model-y/2.jpg" class="collection__img modal__item"></div>
+                        <div class="collection__model-4"><img src="./img/collection/model-y/3.jpg" class="collection__img modal__item"></div>
+                        <div class="collection__model-5"><img src="./img/collection/model-y/4.jpg" class="collection__img modal__item"></div>
+                    </div>
+                    <div class="swiper-slide collection__models">
+                        <div class="collection__model-1 collection__model">
+                            <img src="./img/collection/model-3/0.jpg" class="collection__img-1 collection__img--back modal__item">
+                            <div class="collection__item">
+                                Esemka Car
+                                <div class="collection__name-model">Model SX</div>
+                                <ul class="collection__name-feature">
+                                    <li>2000</li>
+                                    <li>Electric</li>
+                                    <li>Automatic</li>
+                                </ul>
+                                <img src="./img/collection/arrow-right.svg" class="collection__arrow-right">
+                            </div>
+                        </div>
+                        <div class="collection__model-2"><img src="./img/collection/model-3/1.jpg" class="collection__img modal__item"></div>
+                        <div class="collection__model-3"><img src="./img/collection/model-3/2.jpg" class="collection__img modal__item"></div>
+                        <div class="collection__model-4"><img src="./img/collection/model-3/3.jpg" class="collection__img modal__item"></div>
+                        <div class="collection__model-5"><img src="./img/collection/model-3/4.jpg" class="collection__img modal__item"></div>
                     </div>
                 </div>
-                <div class="collection__model-2"></div>
-                <div class="collection__model-3"></div>
-                <div class="collection__model-4"></div>
-                <div class="collection__model-5"></div>
+
             </div>
         </div>
     </div>
-    <div class="experience container">
-        <div class="experience__foto">
-        </div>
+    <div class="container experience">
+        <img src="./img/experiences.png" class="experience__foto">
         <div class="experience__description">
             <h2 class="headline experience__headline"> Over 10 Years Experiences We Sell Electric Cars </h2>
             <div class="experience__text"> Develop a website by finding a product identity that has value and branding to become a characteristic of a company. </div>
@@ -221,8 +299,8 @@
         <h2 class="headline">New Items</h2>
         <div class="new-items__container">
             <div class="new-items__card new-items__card-1">
-                <div class="new-items__elem1 ">NEW</div>
-                <div class="new-items__elem2 ">
+                <div class="new-items__elem1">NEW</div>
+                <div class="new-items__elem2">
                     <h3>Model SV</h3>
                     <p>Esemka Car</p>
                     <p class="red ">$12000</p>
@@ -323,11 +401,11 @@
         <p class="headline subscribe__headline ">Subscribe Our News Letter</p>
         <p class="subscribe__text ">You can read our news letter and get free knowledge</p>
         <form class="subscribe__form " action=" ">
-            <div>
+            <div class="subscribe__form-item">
                 <p class="subscribe__input-name "><label for="GET-name ">Your Name:</label></p>
                 <input class="subscribe__input " placeholder="Input your name " id="GET-name " type="text " name="name ">
             </div>
-            <div>
+            <div class="subscribe__form-item">
                 <p class="subscribe__input-name "><label for="GET-name ">Your Email</label></p>
                 <input class="subscribe__input " placeholder="Input your email " id="GET-name " type="text " name="name ">
             </div>
@@ -340,7 +418,7 @@
     </div>
     <footer class="footer ">
         <div class="footer__wrapper ">
-            <div class="footer-container">
+            <div class="footer-container ">
                 <div class="footer-container__elem1 ">
                     <div class="footer-container__logo">
                         <img src="./img/logo.svg " alt=" ">
@@ -348,45 +426,67 @@
                     <p class="footer-container__elem1-text ">OurStudio is a digital agency UI / UX Design and Website Development located in Ohio, United States of America</p>
                 </div>
                 <div class="footer-container__elem2 ">
-                    <ul>
-                        <p>Company</p>
-                        <li><a href="# ">Home</a></li>
-                        <li><a href="# ">Showroom</a></li>
-                        <li><a href="# ">FAQ</a></li>
-                        <li><a href="# ">Blog</a></li>
-                        <li><a href="# ">Contact Us</a></li>
-                    </ul>
-                    <ul>
-                        <p>Social</p>
-                        <li><a href="# ">Facebook</a></li>
-                        <li><a href="# ">Instagram</a></li>
-                        <li><a href="# ">Youtube</a></li>
-                        <li><a href="# ">Twitter</a></li>
-                        <li><a href="# ">Linkedln</a></li>
-                    </ul>
+                    <div>
+                        <div class="footer-container__elem2--title">
+                            Company
+                        </div>
+                        <ul>
+                            <li><a href="# ">Home</a></li>
+                            <li><a href="# ">Showroom</a></li>
+                            <li><a href="# ">FAQ</a></li>
+                            <li><a href="# ">Blog</a></li>
+                            <li><a href="# ">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="footer-container__elem2--title">
+                            Social
+                        </div>
+                        <ul>
+                            <li><a href="# ">Facebook</a></li>
+                            <li><a href="# ">Instagram</a></li>
+                            <li><a href="# ">Youtube</a></li>
+                            <li><a href="# ">Twitter</a></li>
+                            <li><a href="# ">Linkedln</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="footer-container__elem3 ">
                     <div class="footer-container__elem3-contacts ">
                         <img src="./img/footer/gps.svg " alt=" ">
-                        <p>221 B Santa Monica, Los Angeles</p>
+                        <address>221 B Santa Monica, Los Angeles</address>
                     </div>
                     <div class="footer-container__elem3-contacts ">
                         <img src="./img/footer/tel.svg " alt=" ">
-                        <p>(+1) 923 2341 22</p>
+                        <a href="tel:+1923234122">(+1) 923 2341 22</a>
                     </div>
                     <div class="footer-container__elem3-contacts ">
                         <img src="./img/footer/mail.svg " alt=" ">
-                        <p>contact@tanahairstudio.com</p>
+                        <a href="mailto:contact@tanahairstudio.com">contact@tanahairstudio.com</a>
                     </div>
                 </div>
             </div>
             <div class="copy ">Copyright Tanah Air Studio</div>
     </footer>
     <script src="js/swiper/swiper-bundle.min.js "></script>
+    <script>
+        var swiper2 = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            loop: "true",
+            effect: "fade",
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            observer: true,
+            observeSlideChildren: true,
+        });
+    </script>
     <script src="js/script.js "></script>
     <script type="text/javascript" src="js/collection/data.json"></script>
     <script src="js/collection/slider.js "></script>
     <script src="js/modal.js "></script>
+    <script src="js/SaveValue.js"></script>
 </body>
 
 </html>

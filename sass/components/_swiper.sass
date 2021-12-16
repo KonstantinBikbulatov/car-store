@@ -25,10 +25,8 @@
         line-height: 120%
         width: 310px
 
-
     & .red
         color: #FA3C45
-
 
     & ul
         display: flex
@@ -40,14 +38,12 @@
 .swiper .swiper-pagination
     bottom: 0
 
-
     &-bullet
         width: 16px
         height: 16px
         font-size: 14px
         background-color: #fff
         opacity: 1
-
 
     &-bullet-active
         background-color: #FA3C45
@@ -59,6 +55,36 @@
 .company-name
     font-size: 24px
     margin-bottom: 16px
+
+.swiper-button-prev
+    position: absolute
+    right: 80px
+    top: 13px
+    background-image: url(../img/collection/btn-left.svg)
+    background-size: contain
+    border-radius: 25px
+    height: 48px
+    width: 48px
+    border: 0
+    transition: 0.3s linear
+
+.swiper-button-next
+    position: absolute
+    right: 0
+    top: 13px
+    background-image: url(../img/collection/btn-right.svg)
+    background-size: contain
+    border-radius: 25px
+    height: 48px
+    width: 48px
+    border: 0
+    transition: 0.3s linear
+
+.swiper-button-next:hover
+    background-color: #d3d3d3
+
+.swiper-button-prev:hover
+    background-color: #d3d3d3
 
 .slider-btn
     margin-top: 96px
@@ -73,3 +99,10 @@
 
     &:hover
         border: 1px solid black
+
+@media (max-width: 768px)
+    .swiper-slider__title
+        font-size: 45px
+
+    .swiper-slider__slide
+        height: 147px
