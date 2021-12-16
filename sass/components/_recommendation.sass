@@ -1,0 +1,88 @@
+.recommendation
+    margin-top: 200px
+    
+    &__container
+        display: grid
+        grid-template-columns: repeat(4, 296px)
+        grid-template-rows: repeat(2, 406px)
+        gap: 16px
+
+    &__card
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        padding: 21px 23px
+        background-size: 100% 100%
+        border-radius: 6px
+
+    &__card-1
+        background-image: url(../img/detail/models.jpg)
+    
+    &__card-2
+        background-image: url(../img/detail/modelx1.jpg)
+    
+    &__card-3
+        background-image: url(../img/detail/model3.jpg)
+    
+    &__card-4
+        background-image: url(../img/detail/cyber1.jpg)
+
+    &__card-5
+        background-image: url(../img/detail/modelh.jpeg)
+    
+    &__card-6
+        background-image: url(../img/detail/roadster4.jpg)
+    
+    &__card-7
+        background-image: url(../img/detail/roadster1.jpg)
+    
+    &__card-8
+        background-image: url(../img/detail/roadster2.jpg)
+
+    &__elem1
+        color: #FA3C45
+        background: white
+        border-radius: 6px
+        padding: 3px 6px 2px 7px
+        width: 48px
+        height: 25px
+        font-weight: 600
+        font-size: 14px
+        line-height: 130%
+        text-align: center
+
+    &__elem2
+        display: flex
+        flex-direction: column
+        color: white
+        text-align: center
+        justify-content: space-between
+        height: 93px
+
+.recommendation h3
+    font-weight: bold
+    font-size: 24px
+    line-height: 120%
+    letter-spacing: 0.005em
+
+.recommendation__title
+    color: black
+    font-weight: bold
+    font-size: 48px
+    line-height: 120%
+    letter-spacing: 0.005em
+    margin-bottom: 55px
+
+.recommendation__elem2--red
+    font-weight: bold
+    font-size: 24px
+    line-height: 120%
+    letter-spacing: 0.005em
+    color: #FA3C45
+
+@media (max-width: 1200px)
+    .recommendation__container
+        display: grid
+        grid-template-columns: repeat(2, 296px)
+        grid-template-rows: repeat(4, 406px)
+        gap: 16px
